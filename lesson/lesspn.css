@@ -25,47 +25,6 @@ body {
   line-height: 1.25;
 }
 
-table {
-  border-collapse: collapse;
-  margin: 0 auto;
-  padding: 0;
-  width: 650px;
-  table-layout: fixed;
-}
-
-table tr {
-  background-color: #e6f2f5;
-  padding: 0.35em;
-  border-bottom: 2px solid #fff;
-}
-table th,
-table td {
-  padding: 1em 10px 1em 1em;
-  border-right: 2px solid #fff;
-}
-table th {
-  font-size: 0.85em;
-}
-table thead tr {
-  background-color: #167f92;
-  color: #fff;
-}
-table tbody th {
-  background: #78bbc7;
-  color: #fff;
-}
-.txt {
-  text-align: left;
-  font-size: 0.85em;
-}
-.price {
-  text-align: right;
-  color: #167f92;
-  font-weight: bold;
-}
-.non {
-  background: #fff;
-}
 @media screen and (max-width: 600px) {
   table {
     border: 0;

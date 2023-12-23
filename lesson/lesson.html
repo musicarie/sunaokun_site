@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>Pianist　松井理恵 Official website</title>
+    <title>Pianist　松井理恵 Official website | lesson</title>
     <meta
       name="description"
       content="ピアノ,ピアノレッスン,ピアノ教室,ソルフェージュ,ソルフェージュ教室,ソルフェージュレッスン,松井理恵,ピアニスト,楽典,音楽理論,オンラインレッスン,板橋区役所前,松本市,リトミック"
@@ -13,106 +13,107 @@
       name="description"
       content="ピアニスト。演奏活動をしながら、板橋区と松本市でピアノソルフェージュ・音楽理論等のレッスンをしています。子ども～大人、初心者～専門的に勉強している人まで対応。オンラインレッスン可。"
     />
+    <!-- jqueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
-    <header>
-      <nav class="globalnav">
-        <ul>
-          <li class="navitem"><a href="../index.html">ホーム</a></li>
-          <li class="navitem">
-            <a href="../Profile/Profile.html">プロフィール</a>
-          </li>
-          <li class="navitem">
-            <a href="../concert/concert.html">コンサート</a>
-          </li>
-          <li class="navitem"><a href="lesson.html">レッスン</a></li>
-          <li class="navitem"><a href="../sns/sns.html">snsリンク</a></li>
-        </ul>
-      </nav>
-    </header>
-    <h1 class="mincho">レッスン生募集</h1>
-    <p class="mincho">
-      ピアノ、ソルフェージュ、音楽理論、伴奏付け、アナリーゼ、スコアリーディングなど<br />
-      初心者から愛好家、専門家までどなたでもレッスンを受けられます。<br />
-      音高・音大受験、教員採用試験、保育士試験等対応できます。
-    </p>
-    <p class="mincho">
-      ⭐︎対面レッスン：板橋教室（都営三田線板橋区役所前駅より徒歩3分）
-      松本教室（松本市神林、月に1度基本第4土曜、日曜）<br />
-      ⭐︎オンラインレッスン：FaceTime、zoom、Skype、messengerなどのビデオ通話にて。
-    </p>
-    <h3 class="mincho">⭐︎レッスン料金</h3>
-    <br />
-    <p class="mincho">
-      入会金なし、その都度予定を合わせて予約していただきます。
-    </p>
-    <p class="mincho">【1回レッスン、月3回レッスン、5回回数券】</p>
-    <br />
-    <table>
-      <thead>
-        <tr>
-          <td class="non"></td>
-          <th scope="col">1回レッスン</th>
-          <th scope="col">月3回レッスン</th>
-          <th scope="col">5回回数券(期限なし)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>30分</th>
-          <td data-label="1回レッスン" class="price">3000円</td>
-          <td data-label="月3回レッスン" class="price">7000円</td>
-          <td data-label="5回回数券（期限なし）" class="price"></td>
-        </tr>
-        <tr>
-          <th>45分</th>
-          <td data-label="1回レッスン" class="price">4000円</td>
-          <td data-label="月3回レッスン" class="price">10000円</td>
-          <td data-label="5回回数券（期限なし）" class="price"></td>
-        </tr>
-        <tr>
-          <th>60分</th>
-          <td data-label="1回レッスン" class="price">5000円</td>
-          <td data-label="月3回レッスン" class="price">13000円</td>
-          <td data-label="5回回数券（期限なし）" class="price">23000円</td>
-        </tr>
-        <tr>
-          <th>90分</th>
-          <td data-label="1回レッスン" class="price">7000円</td>
-          <td data-label="月3回レッスン" class="price">19000円</td>
-          <td data-label="5回回数券（期限なし）" class="price">33000円</td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
-    <br />
-    <br />
-    <p class="mincho">
-      【動画レッスン】<br />
-      演奏動画を送っていただき、それに対して動画でお返事いたします。<br />
-      <br />
-      演奏動画5分以内　3000円<br />
-      演奏動画5分以上10分以内　4000円<br />
-      演奏動画10分以上　5000円<br />
-      <br />
-      <br />
-      【体験レッスン】<br />
-      1回30分程度　無料
-    </p>
-    <br />
-    <br />
-    <p class="mincho">
-      レッスンのお申込み・お問い合わせは以下のフォームにご記入ください。
-    </p>
-    <br />
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSctMpJwjSBkxf21OJx2Xw-2bXdTQmCRXgqzNJpfSJFuMrNrcA/viewform?embedded=true"
-      width="640"
-      height="744"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      >読み込んでいます…</iframe
-    >
+    <!-- headerにidを付与 -->
+    <header id="header"></header>
+    <main>
+      <div class="lessonContainer">
+        <h1 class="mincho lessonTitle">レッスン生募集</h1>
+        <div class="mincho lessonDetail">
+          <p>
+            ピアノ、ソルフェージュ、音楽理論、伴奏付け、アナリーゼ、スコアリーディングな
+          </p>
+          <p>初心者から愛好家、専門家までどなたでもレッスンを受けられます。</p>
+          <p>音高・音大受験、教員採用試験、保育士試験等対応できます。</p>
+          <br />
+          <p>
+            ⭐︎対面レッスン：板橋教室（都営三田線板橋区役所前駅より徒歩3分）
+            松本教室（松本市神林、月に1度基本第4土曜、日曜）
+          </p>
+          <p>
+            ⭐︎オンラインレッスン：FaceTime、zoom、Skype、messengerなどのビデオ通話にて。
+          </p>
+        </div>
+        <div class="lessonPriceTextContainer">
+          <h2 class="mincho lessonPriceFont">⭐︎レッスン料金</h2>
+          <div>
+            <p class="mincho">
+              入会金なし、その都度予定を合わせて予約していただきます。
+            </p>
+            <p class="mincho">【1回レッスン、月3回レッスン、5回回数券】</p>
+          </div>
+        </div>
+        <table class="LessonTableBottom">
+          <thead>
+            <tr>
+              <th class="noneTh"></th>
+              <th scope="col">1回レッスン</th>
+              <th scope="col">月3回レッスン</th>
+              <th scope="col">5回回数券(期限なし)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>30分</th>
+              <td data-label="1回レッスン" class="lessonPrice">3000円</td>
+              <td data-label="月3回レッスン" class="lessonPrice">7000円</td>
+              <td data-label="5回回数券（期限なし）" class="lessonPrice"></td>
+            </tr>
+            <tr>
+              <th>45分</th>
+              <td data-label="1回レッスン" class="lessonPrice">4000円</td>
+              <td data-label="月3回レッスン" class="lessonPrice">10000円</td>
+              <td data-label="5回回数券（期限なし）" class="lessonPrice"></td>
+            </tr>
+            <tr>
+              <th>60分</th>
+              <td data-label="1回レッスン" class="lessonPrice">5000円</td>
+              <td data-label="月3回レッスン" class="lessonPrice">13000円</td>
+              <td data-label="5回回数券（期限なし）" class="lessonPrice">
+                23000円
+              </td>
+            </tr>
+            <tr>
+              <th>90分</th>
+              <td data-label="1回レッスン" class="lessonPrice">7000円</td>
+              <td data-label="月3回レッスン" class="lessonPrice">19000円</td>
+              <td data-label="5回回数券（期限なし）" class="lessonPrice">
+                33000円
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="mincho LessonMovieLessonContainer">
+          <p>【動画レッスン】</p>
+          <p>演奏動画を送っていただき、それに対して動画でお返事いたします。</p>
+          <br />
+          <p>演奏動画5分以内　3000円 演奏動画5分以上10分以内　4000円</p>
+          <p>演奏動画10分以上　5000円 【体験レッスン】 1回30分程度　無料</p>
+          <br />
+          <br />
+          <p>
+            レッスンのお申込み・お問い合わせは以下のフォームにご記入ください。
+          </p>
+        </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSctMpJwjSBkxf21OJx2Xw-2bXdTQmCRXgqzNJpfSJFuMrNrcA/viewform?embedded=true"
+          width="640"
+          height="744"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >読み込んでいます…</iframe
+        >
+        <!-- ヘッダーを共通処理として呼び出す -->
+        <script>
+          $(function () {
+            $("#header").load("../common/header.html");
+          });
+        </script>
+      </div>
+    </main>
   </body>
 </html>

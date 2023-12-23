@@ -416,19 +416,18 @@ th {
 
 /* ↑ここまで */
 
+/* header */
 .globalnav {
   width: 100%;
   margin-top: 20px;
   background: #333;
 }
-
 .globalnav ul {
   padding: 10px 0;
   list-style: none;
   display: flex;
   justify-content: center;
 }
-
 .navitem {
   border-left: 1px solid #999;
   text-align: center;
@@ -437,54 +436,11 @@ th {
 .navitem:last-of-type {
   border-right: 1px solid #999;
 }
-
 .navitem a {
   display: block;
   line-height: 1;
   color: #fff;
   text-decoration: none;
-}
-
-.fontsize {
-  font-size: 16px;
-}
-.px {
-  font-size: 45px;
-}
-
-h3 {
-  position: relative;
-  top: 150px;
-  left: 100px;
-}
-
-@media (max-width: 767px) {
-  .nav ul {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-
-a {
-  position: relative;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-a::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: black;
-  transition: 0.3s;
-  transform: translateX(-50%);
-}
-
-a:hover::after {
-  width: 100%;
 }
 
 /* 共通css */
@@ -512,6 +468,28 @@ a:hover::after {
   font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
 }
 
+.customLink {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.customLink::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+.customLink:hover::after {
+  width: 100%;
+}
+
 /* top */
 .topConteiner {
   margin-top: 7%;
@@ -530,7 +508,7 @@ a:hover::after {
   margin-right: 10rem;
 }
 
-/* プロフィール */
+/* profile */
 .profileContainer {
   margin-top: 3%;
   margin-left: 5%;
@@ -553,4 +531,97 @@ a:hover::after {
 }
 .profileSnsLink {
   margin-top: 2rem;
+}
+
+/* concert */
+.concertXmasConcertContainer {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.concertTitleFont {
+  font-weight: bold;
+  font-size: 20px;
+}
+.concertLineHeight {
+  line-height: 40px;
+}
+
+/* lesson */
+.lessonContainer {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.lessonTitle {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.lessonDetail {
+  margin-bottom: 3rem;
+}
+.lessonPriceFont {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.lessonPriceTextContainer {
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+.LessonTableBottom {
+  margin-bottom: 4rem;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #e6f2f5;
+  border-bottom: 2px solid #fff;
+}
+table th,
+table td {
+  padding: 1rem 0 1rem 0;
+  border-right: 2px solid #fff;
+  text-align: center;
+}
+table th {
+  font-size: 0.85em;
+}
+table thead tr {
+  background-color: #167f92;
+  color: #fff;
+}
+table tbody th {
+  background: #78bbc7;
+  color: #fff;
+}
+.lessonPrice {
+  color: #167f92;
+  font-weight: bold;
+}
+.noneTh {
+  background: #fff;
+}
+
+.LessonMovieLessonContainer {
+  margin-bottom: 2rem;
+}
+
+/* sns */
+.snsContainer {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.snsTitleFont {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+.snsDetailContainer {
+  line-height: 35px;
 }
