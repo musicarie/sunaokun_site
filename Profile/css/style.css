@@ -13,17 +13,12 @@ h5 {
   top: -50px;
   left: 130px;
 }
-h5.mincho {
+.mincho {
   font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
 }
-h1.mincho {
-  font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
-}
+
 h1 {
   position: relative;
   top: -180px;
   left: 520px;
-}
-p.mincho {
-  font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
 }

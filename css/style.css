@@ -414,7 +414,7 @@ th {
   font-weight: bold;
 }
 
-/* ここまで */
+/* ↑ここまで */
 
 .globalnav {
   width: 100%;
@@ -444,26 +444,15 @@ th {
   color: #fff;
   text-decoration: none;
 }
-h1 {
-  position: relative;
-  top: -200px;
-  left: 650px;
-}
+
 .fontsize {
   font-size: 16px;
 }
 .px {
   font-size: 45px;
 }
-img {
-  position: relative;
-  top: 100px;
-  left: 100px;
-}
-h1.mincho {
-  font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
-}
-h2.mincho {
+
+.mincho {
   font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
 }
 h3 {
@@ -471,19 +460,50 @@ h3 {
   top: 150px;
   left: 100px;
 }
-h2 {
-  position: relative;
-  top: 100px;
-  left: 100px;
-}
+
 @media (max-width: 767px) {
   .nav ul {
     flex-wrap: wrap;
     gap: 20px;
   }
 }
-p {
-  position: relative;
-  top: 100px;
-  left: 100px;
+
+/* 共通css */
+.flex {
+  display: flex;
+}
+.column {
+  flex-flow: column;
+}
+.itemsCenter {
+  align-items: center;
+  justify-content: center;
+}
+.itemsBottom {
+  margin-top: auto;
+}
+.boldFontStyle {
+  font-size: 2em;
+  font-weight: bold;
+}
+.textLeft {
+  text-align: left;
+}
+
+/* top */
+.topConteiner {
+  margin-top: 7%;
+  margin-left: 5%;
+}
+.topNewsContainer {
+  margin-top: 2rem;
+}
+.topNewsRow {
+  margin-top: 2rem;
+}
+.topTitleRow {
+  margin-bottom: 3rem;
+}
+.topImageContainer {
+  margin-right: 10rem;
 }
