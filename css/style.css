@@ -452,9 +452,6 @@ th {
   font-size: 45px;
 }
 
-.mincho {
-  font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
-}
 h3 {
   position: relative;
   top: 150px;
@@ -466,6 +463,28 @@ h3 {
     flex-wrap: wrap;
     gap: 20px;
   }
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 /* 共通css */
@@ -489,6 +508,9 @@ h3 {
 .textLeft {
   text-align: left;
 }
+.mincho {
+  font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
+}
 
 /* top */
 .topConteiner {
@@ -506,4 +528,29 @@ h3 {
 }
 .topImageContainer {
   margin-right: 10rem;
+}
+
+/* プロフィール */
+.profileContainer {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.profileNameFont {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.profileDetailFont {
+  font-size: 16px;
+  margin-top: 2rem;
+  line-height: 25px;
+}
+.profileDetailContainer {
+  width: 70%;
+}
+.profileImageContainer {
+  margin-right: 10rem;
+}
+.profileSnsLink {
+  margin-top: 2rem;
 }
