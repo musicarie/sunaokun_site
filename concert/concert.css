@@ -1,0 +1,7 @@
+.navitem:last-of-type {
+  border-right: 1px solid #999;
+}
+
+p span {
+  display: block;
+}

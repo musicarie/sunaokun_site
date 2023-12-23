@@ -1,0 +1,19 @@
+img {
+  position: relative;
+  top: 50px;
+  left: 300px;
+}
+p.mincho {
+  font-family: yumincho, "ヒラギノ明朝 pron ", "msp明朝", serif;
+}
+p {
+  position: relative;
+  top: 10px;
+  left: 50px;
+}
+@media (max-width: 767px) {
+  .nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
