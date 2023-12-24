@@ -572,6 +572,9 @@ th {
 .MaxWidth {
   max-width: 20%;
 }
+.spBr {
+  display: none;
+}
 @media only screen and (max-width: 767px) {
   .spColumn {
     flex-direction: column;
@@ -633,6 +636,15 @@ th {
   .topConteiner {
     margin: 0 auto;
   }
+  .topTitleRow {
+    margin-bottom: 2rem;
+  }
+  .topTitleRowSp {
+    margin-top: 3rem;
+  }
+  .topNewsContainer {
+    margin: 1rem 1rem 0 1rem;
+  }
 }
 
 /* profile */
@@ -659,6 +671,31 @@ th {
 .profileSnsLink {
   margin-top: 2rem;
 }
+.profileImage {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .profileContainer {
+    margin: 0 auto;
+    margin-right: 2rem;
+    margin-left: 1rem;
+  }
+  .profileDetailContainer {
+    width: 100%;
+  }
+  .profileImage {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .profileImageContainer {
+    margin: 0 auto;
+  }
+  .profileNameFont {
+    margin-top: 1rem;
+  }
+}
 
 /* concert */
 .concertXmasConcertContainer {
@@ -671,6 +708,19 @@ th {
 }
 .concertLineHeight {
   line-height: 40px;
+}
+.concertImage {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .concertContainer {
+    margin: 1rem;
+  }
+  .concertImage {
+    margin-top: 2rem;
+  }
 }
 
 /* lesson */
@@ -704,6 +754,7 @@ table {
   padding: 0;
   width: 80%;
   table-layout: fixed;
+  overflow-x: auto;
 }
 
 table tr {
@@ -739,6 +790,18 @@ table tbody th {
   margin-bottom: 2rem;
 }
 
+iframe[src^="https://docs.google.com/forms/d/e"]
+{
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .lessonContainer {
+    margin: 0 auto;
+    margin: 0 1rem 0 1rem;
+  }
+}
+
 /* sns */
 .snsContainer {
   margin-top: 3%;
@@ -751,4 +814,22 @@ table tbody th {
 
 .snsDetailContainer {
   line-height: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+  .snsContainer {
+    margin: 0 auto;
+    margin: 0 1rem 0 1rem;
+  }
+  .spBr {
+    display: block;
+  }
+  .snsDetailContainer {
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .spBr {
+    display: none;
+  }
 }
