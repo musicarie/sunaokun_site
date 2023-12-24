@@ -698,6 +698,10 @@ th {
 }
 
 /* concert */
+.concertContainer {
+  margin-top: 3%;
+  margin-left: 5%;
+}
 .concertXmasConcertContainer {
   margin-top: 1rem;
   margin-bottom: 2rem;
